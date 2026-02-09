@@ -16,8 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Abul Qasim | Engineering Leader, CTO & Software Development Manager",
-    description: "Results-driven Software Engineering Manager, fractional CTO, and Computer Science Professor. Specializing in building high-performing teams, scalable enterprise architecture, and cloud-native solutions. Based in Ottawa.",
+    title: "Abul Qasim | Engineering Leader, Professor & Software Development Manager",
+    description: "Results-driven Software Engineering Manager and Computer Science Professor. Specializing in building high-performing teams, scalable enterprise architecture, and cloud-native solutions. Based in Ottawa.",
     keywords: [
         "Software Engineering Manager",
         "CTO",
