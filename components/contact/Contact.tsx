@@ -31,23 +31,23 @@ export function Contact() {
     };
 
     return (
-        <section id="contact" className="py-20 bg-background-secondary dark:bg-background-dark-secondary">
+        <section id="contact" className="py-20 bg-[#0C0C0C]">
             <div className="container-custom">
                 <div className="max-w-2xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="section-title">Let's Connect</h2>
-                        <p className="section-subtitle">
-                            Interested in working together? Let's start a conversation.
+                        <p className="section-subtitle font-mono text-sm">
+                            <span className="text-[#00ff41]">$ ssh</span> abul@portfolio.com
                         </p>
                     </div>
 
                     {submitted ? (
-                        <div className="card text-center">
-                            <div className="text-6xl mb-4">✓</div>
-                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        <div className="card text-center border-[#00ff41]">
+                            <div className="text-6xl mb-4 text-[#00ff41]">✓</div>
+                            <h3 className="text-2xl font-bold text-white mb-2">
                                 Message Sent!
                             </h3>
-                            <p className="text-gray-600 dark:text-gray-400">
+                            <p className="text-gray-400 font-mono">
                                 Thank you for reaching out. I'll get back to you soon.
                             </p>
                         </div>
@@ -55,8 +55,8 @@ export function Contact() {
                         <form onSubmit={handleSubmit} className="card">
                             <div className="space-y-6">
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                                        Name
+                                    <label htmlFor="name" className="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider font-mono">
+                                        // Name
                                     </label>
                                     <input
                                         type="text"
@@ -65,14 +65,14 @@ export function Contact() {
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark-tertiary text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                                        className="w-full px-4 py-3 rounded bg-[#0C0C0C] border border-gray-800 text-white focus:ring-1 focus:ring-[#00ff41] focus:border-[#00ff41] transition-all font-mono"
                                         placeholder="Your name"
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                                        Email
+                                    <label htmlFor="email" className="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider font-mono">
+                                        // Email
                                     </label>
                                     <input
                                         type="email"
@@ -81,14 +81,14 @@ export function Contact() {
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark-tertiary text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                                        className="w-full px-4 py-3 rounded bg-[#0C0C0C] border border-gray-800 text-white focus:ring-1 focus:ring-[#00ff41] focus:border-[#00ff41] transition-all font-mono"
                                         placeholder="your.email@example.com"
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                                        Message
+                                    <label htmlFor="message" className="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider font-mono">
+                                        // Message
                                     </label>
                                     <textarea
                                         id="message"
@@ -97,13 +97,13 @@ export function Contact() {
                                         onChange={handleChange}
                                         required
                                         rows={6}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark-tertiary text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                                        className="w-full px-4 py-3 rounded bg-[#0C0C0C] border border-gray-800 text-white focus:ring-1 focus:ring-[#00ff41] focus:border-[#00ff41] transition-all resize-none font-mono"
                                         placeholder="Tell me about your project or opportunity..."
                                     />
                                 </div>
 
-                                <button type="submit" className="btn-primary w-full inline-flex items-center justify-center gap-2">
-                                    Send Message <Send size={20} />
+                                <button type="submit" className="btn-primary w-full inline-flex items-center justify-center gap-2 font-mono">
+                                    ./send_message.sh <Send size={20} />
                                 </button>
                             </div>
                         </form>
@@ -111,18 +111,18 @@ export function Contact() {
 
                     {/* Direct Contact Info */}
                     <div className="mt-12 text-center">
-                        <p className="text-gray-600 dark:text-gray-400 mb-4">Or reach out directly:</p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <p className="text-gray-500 mb-4 font-mono">// Or reach out directly:</p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center font-mono">
                             <a
                                 href={`mailto:${profileData.email}`}
-                                className="text-primary hover:text-primary-dark font-semibold transition-colors"
+                                className="text-[#00ff41] hover:text-white transition-colors"
                             >
                                 {profileData.email}
                             </a>
-                            <span className="hidden sm:inline text-gray-400">•</span>
+                            <span className="hidden sm:inline text-gray-600">•</span>
                             <a
                                 href={`tel:${profileData.phone}`}
-                                className="text-primary hover:text-primary-dark font-semibold transition-colors"
+                                className="text-[#00ff41] hover:text-white transition-colors"
                             >
                                 {profileData.phone}
                             </a>

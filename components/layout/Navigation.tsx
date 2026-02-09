@@ -25,15 +25,17 @@ export function Navigation() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? 'bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg shadow-medium'
+                ? 'bg-[#0C0C0C]/90 backdrop-blur-lg border-b border-gray-800'
                 : 'bg-transparent'
                 }`}
         >
             <div className="container-custom">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <a href="#" className="text-2xl font-display font-bold gradient-text">
+                    <a href="#" className="text-2xl font-display font-bold text-white tracking-tight">
+                        <span className="text-[#00ff41]">&lt;</span>
                         AQ
+                        <span className="text-[#00ff41]">/&gt;</span>
                     </a>
 
                     {/* Desktop Navigation */}
@@ -42,8 +44,9 @@ export function Navigation() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-semibold transition-colors"
+                                className="text-gray-400 hover:text-[#00ff41] font-mono text-sm transition-colors"
                             >
+                                <span className="text-[#3b82f6] opacity-0 group-hover:opacity-100 mr-1 transition-opacity">./</span>
                                 {link.label}
                             </a>
                         ))}
@@ -52,7 +55,7 @@ export function Navigation() {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="md:hidden text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        className="md:hidden text-gray-300 hover:text-[#00ff41] transition-colors"
                         aria-label="Toggle menu"
                     >
                         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

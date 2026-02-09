@@ -50,8 +50,8 @@ const config: Config = {
                 error: '#dc2626',
             },
             fontFamily: {
-                sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
-                display: ['var(--font-poppins)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+                sans: ['var(--font-mono)', 'var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
+                display: ['var(--font-mono)', 'var(--font-poppins)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
                 mono: ['var(--font-mono)', 'monospace'],
             },
             animation: {
