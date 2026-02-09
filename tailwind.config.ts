@@ -9,12 +9,24 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                // Terminal Theme
+                terminal: {
+                    DEFAULT: '#0C0C0C',
+                    dark: '#050505',
+                    header: '#1a1b26',
+                },
+                neon: {
+                    green: '#00ff41',
+                    blue: '#00f3ff',
+                    purple: '#bd00ff',
+                },
                 // Leadership & Growth Theme - Deep Navy + Teal + Gold accents
                 background: {
                     DEFAULT: '#fafbfc',
                     secondary: '#f1f5f9',
                     tertiary: '#e2e8f0',
                     dark: '#0f172a',
+
                     'dark-secondary': '#1e293b',
                     'dark-tertiary': '#334155',
                 },
@@ -40,6 +52,7 @@ const config: Config = {
             fontFamily: {
                 sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
                 display: ['var(--font-poppins)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+                mono: ['var(--font-mono)', 'monospace'],
             },
             animation: {
                 'fade-in': 'fadeIn 0.6s ease-out',
