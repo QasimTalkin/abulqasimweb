@@ -1,6 +1,6 @@
 export const profileData = {
     name: 'Abul Qasim',
-    title: 'Engineering Leader, CTO & Professor',
+    title: 'Engineering Leader, Developer & Professor',
     location: 'Ottawa, ON',
     email: 'abulqasim110@gmail.com',
     phone: '+1.613.793.0724',
@@ -22,7 +22,7 @@ export const profileData = {
     },
 
     // Summary
-    summary: 'Strategic Engineering Leader and fractional CTO with 9+ years of experience. I specialize in turning chaotic requirements into scalable architecture, building high-performing engineering cultures, and delivering enterprise-grade software. Whether as a Hands-on Manager, Director, or Head of Engineering, I bridge the gap between business goals and technical execution.',
+    summary: 'Software Engineering Leader with 9+ years of experience. I specialize in turning chaotic requirements into scalable architecture, building high-performing engineering cultures, and delivering enterprise-grade software. Whether as a Hands-on Manager, Director, or Head of Engineering, I bridge the gap between business goals and technical execution.',
 
     // Core competencies
     competencies: {
