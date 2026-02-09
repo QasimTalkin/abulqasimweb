@@ -1,0 +1,133 @@
+export interface Achievement {
+    id: string;
+    title: string;
+    description: string;
+    icon: string;
+    rarity: 'legendary' | 'epic' | 'rare' | 'uncommon';
+    unlocked: boolean;
+    unlockedDate?: string;
+    category: 'leadership' | 'technical' | 'teaching' | 'impact';
+}
+
+export const achievements: Achievement[] = [
+    {
+        id: 'zero-turnover',
+        title: 'Zero Turnover',
+        description: 'Maintained 0% voluntary turnover while leading engineering teams',
+        icon: '🏆',
+        rarity: 'legendary',
+        unlocked: true,
+        unlockedDate: '2023',
+        category: 'leadership',
+    },
+    {
+        id: 'master-educator',
+        title: 'Master Educator',
+        description: 'Taught 100+ students annually with excellent course evaluations',
+        icon: '📚',
+        rarity: 'legendary',
+        unlocked: true,
+        unlockedDate: '2019',
+        category: 'teaching',
+    },
+    {
+        id: 'cloud-architect',
+        title: 'Cloud Architect',
+        description: 'Mastered AWS and GCP with containerized microservices',
+        icon: '☁️',
+        rarity: 'epic',
+        unlocked: true,
+        unlockedDate: '2022',
+        category: 'technical',
+    },
+    {
+        id: 'team-builder',
+        title: 'Team Builder',
+        description: 'Successfully led cross-functional teams of 7+ engineers',
+        icon: '👥',
+        rarity: 'epic',
+        unlocked: true,
+        unlockedDate: '2023',
+        category: 'leadership',
+    },
+    {
+        id: 'on-time-delivery',
+        title: 'On-Time Delivery',
+        description: 'Achieved 95% on-time delivery through optimized Agile processes',
+        icon: '🚀',
+        rarity: 'epic',
+        unlocked: true,
+        unlockedDate: '2023',
+        category: 'leadership',
+    },
+    {
+        id: 'financial-guardian',
+        title: 'Financial Guardian',
+        description: 'Managed fintech applications handling $50M+ in assets',
+        icon: '💰',
+        rarity: 'rare',
+        unlocked: true,
+        unlockedDate: '2021',
+        category: 'impact',
+    },
+    {
+        id: 'academic-excellence',
+        title: 'Academic Excellence',
+        description: '3.8 GPA with Honors and Dean\'s Honor List recognition',
+        icon: '🎓',
+        rarity: 'rare',
+        unlocked: true,
+        unlockedDate: '2018',
+        category: 'teaching',
+    },
+    {
+        id: 'full-stack-master',
+        title: 'Full Stack Master',
+        description: 'Mastered 10+ programming languages and frameworks',
+        icon: '🔧',
+        rarity: 'epic',
+        unlocked: true,
+        unlockedDate: '2020',
+        category: 'technical',
+    },
+    {
+        id: 'uptime-champion',
+        title: 'Uptime Champion',
+        description: 'Achieved 99.9% uptime for enterprise platform',
+        icon: '⚡',
+        rarity: 'epic',
+        unlocked: true,
+        unlockedDate: '2024',
+        category: 'technical',
+    },
+    {
+        id: 'mentor-extraordinaire',
+        title: 'Mentor Extraordinaire',
+        description: 'Mentored 20+ developers throughout career with 3 promotions',
+        icon: '🌟',
+        rarity: 'rare',
+        unlocked: true,
+        unlockedDate: '2023',
+        category: 'leadership',
+    },
+    {
+        id: 'bootcamp-instructor',
+        title: 'Bootcamp Instructor',
+        description: '95% completion rate and 85% job placement for MERN stack bootcamp',
+        icon: '💻',
+        rarity: 'rare',
+        unlocked: true,
+        unlockedDate: '2023',
+        category: 'teaching',
+    },
+    {
+        id: 'security-specialist',
+        title: 'Security Specialist',
+        description: 'Built secure applications for Department of National Defence',
+        icon: '🔒',
+        rarity: 'uncommon',
+        unlocked: true,
+        unlockedDate: '2019',
+        category: 'technical',
+    },
+];
