@@ -16,9 +16,53 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Abul Qasim - Engineering Leader",
-    description: "Results-driven Software Engineering Manager with 9+ years of experience building enterprise-scale products and leading high-performing teams.",
-    keywords: ["Software Engineering Manager", "Team Lead", "Full Stack Developer", "Engineering Leadership"],
+    title: "Abul Qasim | Engineering Leader, CTO & Software Development Manager",
+    description: "Results-driven Software Engineering Manager, fractional CTO, and Computer Science Professor. Specializing in building high-performing teams, scalable enterprise architecture, and cloud-native solutions. Based in Ottawa.",
+    keywords: [
+        "Software Engineering Manager",
+        "CTO",
+        "Chief Technology Officer",
+        "Head of Engineering",
+        "Director of Engineering",
+        "Team Lead",
+        "Full Stack Developer",
+        "Technical Leadership",
+        "Ottawa",
+        "Remote"
+    ],
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "https://abulqasim.dev",
+        title: "Abul Qasim | Engineering Leader & CTO",
+        description: "Building high-performing teams and scalable software systems. 9+ years of experience in leadership and full-stack development.",
+        siteName: "Abul Qasim Portfolio",
+        images: [
+            {
+                url: "/og-image.png", // We'll need to ensure this exists or use a placeholder
+                width: 1200,
+                height: 630,
+                alt: "Abul Qasim - Engineering Leader",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Abul Qasim | Engineering Leader & CTO",
+        description: "Engineering Manager & Professor. Scaling teams and tech.",
+        creator: "@QasimTalkin",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
 };
 
 export default function RootLayout({

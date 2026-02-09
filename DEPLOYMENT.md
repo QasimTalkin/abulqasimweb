@@ -42,27 +42,33 @@ gcloud config set project portfolio-abulqasim
 gcloud app create --region=northamerica-northeast1
 ```
 
-### 2. Build & Deploy
+### 2. Build & Deploy (Cloud Run)
+
+This project is optimized for Cloud Run using a standalone Docker build.
 
 ```bash
-# Install dependencies
-npm install
-
-# Build production bundle
-npm run build
-
-# Deploy to App Engine
-gcloud app deploy
+# Deploy to Cloud Run (Optimized)
+gcloud run deploy abulqasimweb \
+  --source . \
+  --region us-central1 \
+  --allow-unauthenticated \
+  --min-instances 0 \
+  --max-instances 1 \
+  --memory 512Mi \
+  --cpu 1 \
+  --project=project-22eea23b-9c5b-43c5-ab9
 ```
 
 ### 3. Verify Deployment
 
-```bash
-# Open in browser
-gcloud app browse
-```
+After the command completes, it will output a URL (e.g., `https://abulqasimweb-xyz-run.app`).
 
-Your site is now live at: `https://portfolio-abulqasim.nn.r.appspot.com`
+To map your custom domain:
+1. Go to **Cloud Run** in GCP Console.
+2. Select **Manage Custom Domains**.
+3. Map `abulqasim.dev` to the `abulqasimweb` service.
+
+**Note on Port:** The container is configured to listen on port `8080` (Cloud Run default).
 
 ---
 
