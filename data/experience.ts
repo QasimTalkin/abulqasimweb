@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
             'Zero voluntary turnover with 3 internal promotions facilitated',
             'Reduced mean time to resolution by 30% with AWS CloudWatch and New Relic',
         ],
-        principle: 'Well thought-out decisions over instant gratification - be the leader the organization needs',
+        principle: 'Clear roadblocks, enable flow, and trust the team to execute.',
         technologies: ['Java', 'Spring Boot', 'Apache Kafka', 'React', 'GraphQL', 'MySQL', 'AWS'],
     },
     {
@@ -38,7 +38,7 @@ export const experiences: Experience[] = [
             'Increased code quality metrics by 25% through code review standards and mentoring',
             'Designed Docker/Kubernetes architecture for scalable cloud infrastructure',
         ],
-        principle: 'Build to demand - understand your customers and build what they need',
+        principle: 'Ship value, not just code. Validated learning over guesswork.',
         technologies: ['Ruby on Rails', 'Vue.js', 'React', 'Node.js', 'Docker', 'Kubernetes', 'GCP'],
     },
     {
@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
             'Reduced production incidents by 35% through quality engineering practices',
             'Improved application response times by 30% with database optimization',
         ],
-        principle: 'Everything as code - peer reviewed, easily deployed, and easily rolled back',
+        principle: 'Automate everything. If you do it twice, script it.',
         technologies: ['Ruby on Rails', 'AngularJS', 'React', 'Node.js', 'RSpec', 'Material UI'],
     },
     {
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
             'Developed curriculum for modern web technologies and industry best practices',
             'Received excellent student feedback and course evaluations',
         ],
-        principle: 'Make it real - take what you envision and make it real, build it and share it',
+        principle: 'Learn by building. Theory without practice is just trivia.',
         technologies: ['Java', 'JavaScript', 'React', 'Node.js', 'Mobile Development'],
     },
     {
@@ -81,7 +81,7 @@ export const experiences: Experience[] = [
             'Increased user engagement by 20% through responsive interface design',
             'Implemented automated testing frameworks for reliability',
         ],
-        principle: 'Be the master of your domain - own your product through and through',
+        principle: 'Extreme Ownership. The buck stops here.',
         technologies: ['ColdFusion', 'Mura CMS', 'Hibernate', 'HTML5', 'CSS3', 'JavaScript'],
     },
     {
@@ -95,7 +95,7 @@ export const experiences: Experience[] = [
             'Optimized database performance by 25% through efficient SQL design',
             'Ensured compliance with government security standards',
         ],
-        principle: 'Limit friction - be open, honest, and collaborative across the organization',
+        principle: 'Mission critical reliability. Zero margin for error.',
         technologies: ['.NET Framework', 'C#', 'ASP.NET', 'SQL Server'],
     },
 ];

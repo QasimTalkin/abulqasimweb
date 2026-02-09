@@ -32,24 +32,24 @@ const skillCategories = [
 
 export function Skills() {
     return (
-        <section className="py-20 bg-background dark:bg-background-dark">
+        <section id="skills" className="py-20 bg-[#0C0C0C]">
             <div className="container-custom">
                 <div className="text-center mb-16">
                     <h2 className="section-title">Skills & Expertise</h2>
-                    <p className="section-subtitle">
-                        Technical and leadership capabilities built over 9+ years
+                    <p className="section-subtitle font-mono text-sm">
+                        <span className="text-[#3b82f6]">import</span> &#123; capabilities &#125; <span className="text-[#3b82f6]">from</span> <span className="text-[#00ff41]">'experience'</span>;
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {skillCategories.map((category) => (
-                        <div key={category.title} className="card">
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                                {category.title}
+                        <div key={category.title} className="bg-[#1a1b26] border border-gray-800 rounded p-6 hover:border-gray-600 transition-colors">
+                            <h3 className="text-xl font-bold text-white mb-4 font-mono flex items-center gap-2">
+                                <span className="text-[#00ff41]">$</span> {category.title}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {category.skills.map((skill) => (
-                                    <span key={skill} className="tech-badge">
+                                    <span key={skill} className="px-3 py-1 bg-[#0C0C0C] text-gray-300 text-xs font-mono rounded border border-gray-800 hover:border-[#00ff41] hover:text-[#00ff41] transition-colors cursor-default">
                                         {skill}
                                     </span>
                                 ))}
