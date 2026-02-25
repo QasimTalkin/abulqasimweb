@@ -4,12 +4,12 @@ An interactive portfolio website designed as a mini-game experience, showcasing 
 
 ## 🎮 Features
 
-- **Character Select Hero**: Choose from different career roles with RPG-style stats
-- **Player Stats Dashboard**: View core attributes, XP, and career metrics
-- **Achievement System**: Unlock badges based on career milestones
-- **Levels (Projects)**: GitHub repositories displayed as game levels with tech stack as "loot"
-- **Journey Timeline**: Interactive timeline showing career progression and lessons learned
-- **Boss Battle Contact**: Epic contact form designed as a final boss encounter
+- **Character Select Hero**: Choose from different career roles (Engineering Manager, Lead Developer) with RPG-style stats reflecting current expertise.
+- **Player Stats Dashboard**: Real-time view of core engineering attributes, XP, and career metrics like team size and mentoring impact.
+- **Achievement System**: Unlock "legendary loot" and badges based on real-world career milestones and technical proficiencies.
+- **Levels (Projects)**: GitHub repositories transformed into game levels, featuring "loot" (tech stack) and experience-based level calculations.
+- **Journey Timeline**: A quest log style timeline showing professional growth, key victories, and strategic lessons learned.
+- **Boss Battle Contact**: A high-stakes contact form designed as a final boss encounter with immersive UI elements.
 
 ## 🚀 Tech Stack
 
@@ -43,19 +43,20 @@ npm start
 
 ## 📊 Stats
 
-- **Level**: 34
+- **Level**: 42
 - **Years of Experience**: 9+
+- **Team size**: 15 engineers
 - **Students Mentored**: 100+
-- **Teaching Rating**: 4.8/5.0
-- **Team Size**: 7 engineers
+- **Projects Completed**: 50+
+- **Technologies Mastered**: 25+
 
 ## 🎯 Achievements
 
-- 🏆 Zero Turnover - 0% voluntary turnover
-- 📚 Master Educator - 4.8/5.0 rating
-- ☁️ Cloud Architect - AWS + GCP expertise
-- 👥 Team Builder - Led teams of 7+ engineers
-- 🚀 On-Time Delivery - 95% sprint success
+- 🏆 **Zero Turnover** - Maintained 0% voluntary turnover in managed teams.
+- 📚 **Master Educator** - Consistent 4.8/5.0 student rating during tenure as a Professor.
+- ☁️ **Cloud Architect** - Deep expertise in AWS and Google Cloud Platform (GCP).
+- 👥 **Team Scaling** - Experienced in scaling and leading high-performing teams of 15+ engineers.
+- 🚀 **Strategic Delivery** - 95% sprint success rate with a focus on enterprise-grade stability.
 
 ## 📫 Contact
 

@@ -64,7 +64,9 @@ export function Projects() {
                             </div>
 
                             <p className="text-gray-400 mb-4 line-clamp-3 flex-grow font-mono text-sm border-l border-gray-800 pl-3">
-                                {repo.description || 'No description available'}
+                                {repo.description || (repo.topics && repo.topics.length > 0
+                                    ? `Specializing in ${repo.topics.slice(0, 3).join(', ')}${repo.topics.length > 3 ? ' and more' : ''}.`
+                                    : 'A classified project exploring technical horizons.')}
                             </p>
 
                             <div className="mt-auto">

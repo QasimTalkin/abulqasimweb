@@ -30,11 +30,11 @@ export function LevelCard({ repo }: LevelCardProps) {
             </h3>
 
             {/* Description */}
-            {repo.description && (
-                <p className="text-sm text-gray-400 mb-4 line-clamp-2">
-                    {repo.description}
-                </p>
-            )}
+            <p className="text-sm text-gray-400 mb-4 line-clamp-2">
+                {repo.description || (repo.topics && repo.topics.length > 0
+                    ? `Level focusing on ${repo.topics.slice(0, 3).join(', ')}.`
+                    : 'System data retrieval in progress...')}
+            </p>
 
             {/* Main language as primary loot */}
             {repo.language && (
