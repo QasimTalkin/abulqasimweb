@@ -3,6 +3,7 @@ import { Inter, Poppins, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
+import { ThemeProvider } from '@/components/ui/ThemeProvider';
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const poppins = Poppins({
@@ -86,9 +87,11 @@ export default function RootLayout({
                 />
             </head>
             <body className={`${inter.variable} ${poppins.variable} ${jetbrainsMono.variable} font-sans`}>
-                <Navigation />
-                {children}
-                <Footer />
+                <ThemeProvider>
+                    <Navigation />
+                    {children}
+                    <Footer />
+                </ThemeProvider>
             </body>
         </html>
     );
