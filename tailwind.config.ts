@@ -58,6 +58,7 @@ const config: Config = {
                 'fade-in': 'fadeIn 0.6s ease-out',
                 'slide-up': 'slideUp 0.7s ease-out',
                 'grow': 'grow 0.8s ease-out',
+                'shimmer': 'shimmer 1.5s infinite',
             },
             keyframes: {
                 fadeIn: {
@@ -71,6 +72,9 @@ const config: Config = {
                 grow: {
                     '0%': { transform: 'scale(0.95)', opacity: '0' },
                     '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                shimmer: {
+                    '100%': { transform: 'translateX(100%)' },
                 },
             },
             boxShadow: {

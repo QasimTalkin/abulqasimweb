@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { profileData } from '@/data/profile';
-import { ArrowRight, Github, Linkedin, Mail, Terminal, ChevronRight } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, Terminal, ChevronRight, Download, FileText } from 'lucide-react';
 import { Typewriter } from '@/components/ui/Typewriter';
 
 export function Hero() {
@@ -85,11 +85,16 @@ export function Hero() {
 
                                 {/* Actions */}
                                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                                    <a href="#journey" className="group px-6 py-3 bg-[#00ff41]/10 border border-[#00ff41] text-[#00ff41] hover:bg-[#00ff41] hover:text-black transition-all rounded font-bold flex items-center justify-center gap-2">
-                                        ./view_journey.sh <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                    <a href="#journey" className="group px-6 py-3 bg-[#00ff41]/10 border border-[#00ff41] text-[#00ff41] hover:bg-[#00ff41] hover:text-black transition-all rounded-md font-bold flex items-center justify-center gap-2">
+                                        <Terminal size={18} className="group-hover:-translate-y-1 transition-transform" /> ./view_journey.sh <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                     </a>
-                                    <a href="#principles" className="px-6 py-3 border border-gray-700 text-gray-400 hover:border-white hover:text-white transition-all rounded font-bold flex items-center justify-center gap-2">
-                                        cat principles.md
+                                    <a href="#principles" className="group px-6 py-3 border border-gray-700 text-gray-400 hover:border-white hover:text-white transition-all rounded-md font-bold flex items-center justify-center gap-2">
+                                        <FileText size={18} className="group-hover:-translate-y-1 transition-transform" /> cat principles.md
+                                    </a>
+                                    <a href="/Abul Qasim - Software Engineering Manager.pdf" target="_blank" rel="noopener noreferrer" className="relative overflow-hidden group px-6 py-3 bg-[#bd00ff]/10 border border-[#bd00ff] text-[#bd00ff] hover:bg-[#bd00ff] hover:text-white transition-all duration-300 rounded-md font-bold flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(189,0,255,0.4)]">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#bd00ff]/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                                        <Download size={18} className="group-hover:translate-y-[2px] transition-transform" />
+                                        <span>wget resume.pdf</span>
                                     </a>
                                 </div>
                             </div>
