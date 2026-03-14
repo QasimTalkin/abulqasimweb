@@ -16,7 +16,7 @@ export default function Home() {
                         '@type': 'Person',
                         name: 'Abul Qasim',
                         jobTitle: ['Software Engineering Manager', 'CTO', 'Professor'],
-                        url: 'https://abulqasim.dev',
+                        url: 'https://abulqasim.net',
                         sameAs: [
                             'https://github.com/QasimTalkin',
                             'https://ca.linkedin.com/in/abulqasim',

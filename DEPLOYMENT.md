@@ -1,6 +1,6 @@
-# Deploying to abulqasim.dev on GCP
+# Deploying to abulqasim.net on GCP
 
-This guide walks you through deploying your portfolio to Google Cloud Platform and connecting it to your custom domain **abulqasim.dev**.
+This guide walks you through deploying your portfolio to Google Cloud Platform and connecting it to your custom domain **abulqasim.net**.
 
 ---
 
@@ -23,7 +23,7 @@ gcloud app browse
 
 1. **GCP Account** with billing enabled
 2. **gcloud CLI** installed and authenticated
-3. **Domain ownership** of abulqasim.dev verified
+3. **Domain ownership** of abulqasim.net verified
 
 ---
 
@@ -66,19 +66,19 @@ After the command completes, it will output a URL (e.g., `https://abulqasimweb-x
 To map your custom domain:
 1. Go to **Cloud Run** in GCP Console.
 2. Select **Manage Custom Domains**.
-3. Map `abulqasim.dev` to the `abulqasimweb` service.
+3. Map `abulqasim.net` to the `abulqasimweb` service.
 
 **Note on Port:** The container is configured to listen on port `8080` (Cloud Run default).
 
 ---
 
-## Connecting abulqasim.dev Domain
+## Connecting abulqasim.net Domain
 
 ### Step 1: Verify Domain Ownership
 
 1. Go to **GCP Console** → **App Engine** → **Settings** → **Custom Domains**
 2. Click **Add a custom domain**
-3. Enter `abulqasim.dev`
+3. Enter `abulqasim.net`
 4. GCP will provide a TXT record for verification
 
 ### Step 2: Add TXT Record at Domain Registrar
@@ -110,8 +110,8 @@ After verification, GCP provides the following records. Add them to your DNS:
 ### Step 4: Add Domain Mapping in GCP
 
 ```bash
-gcloud app domain-mappings create abulqasim.dev
-gcloud app domain-mappings create www.abulqasim.dev
+gcloud app domain-mappings create abulqasim.net
+gcloud app domain-mappings create www.abulqasim.net
 ```
 
 ### Step 5: Enable SSL
@@ -119,7 +119,7 @@ gcloud app domain-mappings create www.abulqasim.dev
 GCP automatically provisions SSL certificates. Check status:
 
 ```bash
-gcloud app domain-mappings describe abulqasim.dev
+gcloud app domain-mappings describe abulqasim.net
 ```
 
 Wait 10-30 minutes for SSL certificate provisioning.
@@ -131,7 +131,7 @@ Wait 10-30 minutes for SSL certificate provisioning.
 ### Cloudflare
 
 1. Log into Cloudflare dashboard
-2. Select `abulqasim.dev`
+2. Select `abulqasim.net`
 3. Go to **DNS** → **Records**
 4. Add the A, AAAA, and CNAME records above
 5. Set **Proxy status** to **DNS only** (gray cloud)
@@ -139,13 +139,13 @@ Wait 10-30 minutes for SSL certificate provisioning.
 ### Namecheap
 
 1. Log into Namecheap
-2. Go to **Domain List** → **abulqasim.dev** → **Advanced DNS**
+2. Go to **Domain List** → **abulqasim.net** → **Advanced DNS**
 3. Add the records as shown above
 
 ### Google Domains
 
 1. Go to **domains.google.com**
-2. Select **abulqasim.dev** → **DNS**
+2. Select **abulqasim.net** → **DNS**
 3. Add custom records as shown above
 
 ---
@@ -156,7 +156,7 @@ After DNS propagation (can take up to 48 hours, usually faster):
 
 ```bash
 # Test the domain
-curl -I https://abulqasim.dev
+curl -I https://abulqasim.net
 
 # Expected response
 HTTP/2 200
@@ -180,7 +180,7 @@ gcloud app deploy
 ### SSL Certificate Pending
 Wait 10-30 minutes. Check status with:
 ```bash
-gcloud app domain-mappings describe abulqasim.dev
+gcloud app domain-mappings describe abulqasim.net
 ```
 
 ### DNS Not Propagating
@@ -212,6 +212,6 @@ For a portfolio site with moderate traffic, you likely stay within free tier.
 - [ ] Domain verified in GCP
 - [ ] DNS records added at registrar
 - [ ] SSL certificate provisioned
-- [ ] Site accessible at https://abulqasim.dev
+- [ ] Site accessible at https://abulqasim.net
 
-🎉 **Your professional portfolio is now live at abulqasim.dev!**
+🎉 **Your professional portfolio is now live at abulqasim.net!**
