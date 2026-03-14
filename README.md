@@ -1,67 +1,56 @@
-# Gamified Portfolio
+# Abul Qasim - Portfolio
 
-An interactive portfolio website designed as a mini-game experience, showcasing my journey from student to Software Engineering Manager.
+An interactive and immersive professional portfolio showcasing my journey as a Software Engineering Manager, Full Stack Developer, and Educator. 
 
-## 🎮 Features
+This portfolio features a unique **dual-theme architecture**, allowing users to seamlessly toggle between a highly-technical "Developer" terminal interface and a clean, modern "Professional" layout optimized for recruiters and non-technical stakeholders.
 
-- **Character Select Hero**: Choose from different career roles (Engineering Manager, Lead Developer) with RPG-style stats reflecting current expertise.
-- **Player Stats Dashboard**: Real-time view of core engineering attributes, XP, and career metrics like team size and mentoring impact.
-- **Achievement System**: Unlock "legendary loot" and badges based on real-world career milestones and technical proficiencies.
-- **Levels (Projects)**: GitHub repositories transformed into game levels, featuring "loot" (tech stack) and experience-based level calculations.
-- **Journey Timeline**: A quest log style timeline showing professional growth, key victories, and strategic lessons learned.
-- **Boss Battle Contact**: A high-stakes contact form designed as a final boss encounter with immersive UI elements.
+## ✨ Key Features
+
+- **Dual-Theme Toggle**: A fluid, animated switch to seamlessly transition the entire application between "DEV" (Terminal/Hacker style) and "PRO" (Clean/Corporate style) modes. State is persisted locally.
+- **Dynamic Hero Section**: Two distinctly different layouts for the landing view based on the active theme, loaded with dynamic typing effects and rich typography.
+- **Interactive Journey Timeline**: A detailed professional timeline adapting completely to the active aesthetic, showcasing leadership roles, technical impact, and career milestones.
+- **GitHub Integration**: Live integration with the GitHub API to pull and display featured repositories automatically in the Projects section.
+- **Responsive Design**: Fully mobile-optimized across both theme variants.
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS with custom game theme
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Data**: GitHub API for live project data
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: React Context (`ThemeContext`)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## 📦 Installation
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/QasimTalkin/abulqasimweb
+   cd abulqasimweb
+   ```
+
+2. **Install dependencies**
+   We recommend using `pnpm` for this project.
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
+
+## 🏗️ Build for Production
 
 ```bash
-npm install
+pnpm build
+pnpm start
 ```
-
-## 🏃 Development
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
-
-## 🏗️ Build
-
-```bash
-npm run build
-npm start
-```
-
-## 📊 Stats
-
-- **Level**: 42
-- **Years of Experience**: 9+
-- **Team size**: 15 engineers
-- **Students Mentored**: 100+
-- **Projects Completed**: 50+
-- **Technologies Mastered**: 25+
-
-## 🎯 Achievements
-
-- 🏆 **Zero Turnover** - Maintained 0% voluntary turnover in managed teams.
-- 📚 **Master Educator** - Consistent 4.8/5.0 student rating during tenure as a Professor.
-- ☁️ **Cloud Architect** - Deep expertise in AWS and Google Cloud Platform (GCP).
-- 👥 **Team Scaling** - Experienced in scaling and leading high-performing teams of 15+ engineers.
-- 🚀 **Strategic Delivery** - 95% sprint success rate with a focus on enterprise-grade stability.
 
 ## 📫 Contact
 
 - **Email**: abulqasim110@gmail.com
-- **Phone**: +1.613.793.0724
 - **GitHub**: [@QasimTalkin](https://github.com/QasimTalkin)
 - **LinkedIn**: [abulqasim](https://ca.linkedin.com/in/abulqasim)
 
