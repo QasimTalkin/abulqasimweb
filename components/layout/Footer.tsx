@@ -37,6 +37,11 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
+                                <a href="#teaching" className="text-gray-400 hover:text-[#00ff41] transition-colors text-sm">
+                                    &gt; Teaching
+                                </a>
+                            </li>
+                            <li>
                                 <a href="#contact" className="text-gray-400 hover:text-[#00ff41] transition-colors text-sm">
                                     &gt; Contact
                                 </a>

@@ -11,10 +11,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
+        id: 'ratehub-manager',
+        title: 'Engineering Manager',
+        company: 'Ratehub',
+        period: 'Feb 2026 - Present',
+        type: 'leadership',
+        impact: [
+            'Direct a cross-functional engineering team (3 FE, 2 BE, 1 QA) inside a Product-Design-Engineering triad, delivering core platform infrastructure and the flagship Memberships product suite',
+            'Own data-driven capacity planning for quarterly and annual roadmaps, introducing a t-shirt sizing model now adopted across every engineering team to sharpen delivery predictability and multi-team estimation',
+            'Run an engineering-first governance model with high-fidelity architecture and code reviews to de-risk technical debt, and drive rapid PoC workflows that validate technical direction before Product formalization',
+            'Evolve the Job Leveling Framework for Engineering, Management, and QA, standardizing hiring benchmarks and promotion pathways, and own end-to-end hiring including a three-round QA Automation process with structured rubrics and a live technical assessment',
+            'Mentor peer engineering leads new to management and close org-wide structural gaps in a Director-adjacent capacity following the departure of senior engineering leadership',
+            'Partner with Marketing on Generative Engine Optimization (GEO) infrastructure, setting front-end readability standards for LLM discoverability as a first-mover capability in fintech',
+        ],
+        principle: 'Fail fast, iron out the engineering early, and de-risk before we scale.',
+        technologies: ['React', 'TypeScript', 'Node.js', 'AWS', 'Microservices', 'GEO'],
+    },
+    {
         id: 'allocadia-manager',
         title: 'Software Development Manager',
         company: 'Allocadia (Uptempo)',
-        period: 'Aug 2023 - Present',
+        period: 'Aug 2023 - Jan 2026',
         type: 'leadership',
         impact: [
             'Led cross-functional team of 7 engineers delivering enterprise platform to 500+ customers',

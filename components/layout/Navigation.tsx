@@ -21,6 +21,7 @@ export function Navigation() {
         { href: '#journey', label: 'Journey' },
         { href: '#principles', label: 'Principles' },
         { href: '#projects', label: 'Projects' },
+        { href: '#teaching', label: 'Teaching' },
         { href: '#contact', label: 'Contact' },
     ];
 

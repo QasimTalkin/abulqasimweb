@@ -3,6 +3,7 @@ import { Timeline } from '@/components/journey/Timeline';
 import { Principles } from '@/components/principles/Principles';
 import { Skills } from '@/components/skills/Skills';
 import { Projects } from '@/components/projects/Projects';
+import { Teaching } from '@/components/teaching/Teaching';
 import { Contact } from '@/components/contact/Contact';
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
             <Principles />
             <Skills />
             <Projects />
+            <Teaching />
             <Contact />
         </main>
     );
