@@ -62,7 +62,7 @@ export function Timeline() {
                                             {exp.impact.map((item, i) => (
                                                 <li key={i} className="flex items-start gap-2">
                                                     {theme === 'dev' ? (
-                                                        <span className="text-[#00ff41] mt-1 font-mono text-sm leading-tight">Found exp:</span>
+                                                        <span className="text-[#00ff41] mt-1 font-mono text-sm leading-tight">&gt;</span>
                                                     ) : (
                                                         <span className="text-primary mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
                                                     )}
