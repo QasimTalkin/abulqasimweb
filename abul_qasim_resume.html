@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Abul Qasim - Software Engineering Manager</title>
+<style>
+    :root {
+        --ink: #1a1a1a;
+        --text: #222222;
+        --muted: #333333;
+        --blue: #2957c8;
+        --red: #b02a2a;
+        --rule: #2957c8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--text);
+        font-size: 9.9px;
+        line-height: 1.42;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+        width: 8.5in;
+        padding: 0.4in 0.55in;
+        margin: 0 auto;
+    }
+
+    /* ---------- Header ---------- */
+    .name {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: var(--ink);
+        margin: 0 0 4px;
+    }
+    .headline {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--blue);
+        margin: 0 0 5px;
+    }
+    .contact {
+        text-align: center;
+        font-size: 9.6px;
+        color: var(--muted);
+        margin: 0 0 7px;
+    }
+    .contact .dot { color: #999; margin: 0 7px; }
+    .header-rule {
+        border: none;
+        border-top: 3px solid var(--rule);
+        margin: 4px 0 10px;
+    }
+
+    /* ---------- Sections ---------- */
+    .section-title {
+        font-size: 11.5px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: var(--ink);
+        margin: 10px 0 3px;
+        padding-bottom: 2.5px;
+        border-bottom: 2px solid var(--rule);
+    }
+    .section-title:first-of-type { margin-top: 0; }
+
+    p.summary { margin: 5px 0 0; text-align: left; }
+
+    b, strong { color: var(--ink); font-weight: 700; }
+
+    /* ---------- Competencies ---------- */
+    .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px 34px;
+        margin-top: 5px;
+    }
+    .comp-group { margin-bottom: 2.5px; }
+    .comp-title { font-weight: 700; color: var(--ink); }
+    .comp-items { color: var(--muted); }
+
+    /* ---------- Experience ---------- */
+    .job { margin-top: 8px; }
+    .job:first-child { margin-top: 6px; }
+    .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .job-title { font-size: 11px; font-weight: 700; color: var(--ink); }
+    .job-date { font-size: 9.4px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .job-company { color: var(--blue); font-weight: 700; margin: 0 0 2px; }
+    ul.bullets { margin: 2px 0 0; padding-left: 14px; }
+    ul.bullets li { margin: 1.2px 0; }
+
+    .metric { color: var(--red); font-weight: 700; }
+    .tech { color: var(--red); font-style: italic; }
+
+    /* ---------- Two-column sub-entries ---------- */
+    .block { margin-bottom: 7px; }
+    .block .job-title { font-size: 10.5px; }
+    .block .period { color: var(--muted); margin: 0 0 2px; }
+    .block ul.bullets { padding-left: 14px; }
+
+    /* ---------- Education ---------- */
+    .edu { margin-top: 5px; }
+    .edu-title { font-weight: 700; color: var(--ink); }
+    .edu-school { color: var(--blue); font-weight: 700; }
+    .edu-detail { font-style: italic; color: var(--muted); }
+
+    @page {
+        size: letter;
+        margin: 0.4in 0.55in;
+    }
+    @media print {
+        .page { padding: 0; width: auto; margin: 0; }
+    }
+</style>
+</head>
+<body>
+<div class="page">
+
+    <!-- Header -->
+    <div class="name">ABUL QASIM</div>
+    <div class="headline">Software Engineering Manager</div>
+    <div class="contact">
+        Ottawa, ON <span class="dot">&bull;</span> +1.613.793.0724 <span class="dot">&bull;</span> abulqasim110@gmail.com <span class="dot">&bull;</span> linkedin.com/in/abulqasim
+    </div>
+    <hr class="header-rule" />
+
+    <!-- Professional Summary -->
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+        Software Engineering Manager with <b>10+ years</b> of progressive experience leading high-performing, cross-functional teams and delivering enterprise-scale products. Proven record of managing <b>teams of 7+ engineers</b>, driving <b>100% on-time delivery</b> and <b>99.9% uptime</b>, and architecting microservices on AWS/GCP. Deep full-stack engineer at heart across Java, React, and Ruby on Rails, who modernized legacy fintech systems, led digital transformation, and mentored 20+ developers while sustaining exceptional team retention.
+    </p>
+
+    <!-- Core Competencies -->
+    <div class="section-title">Core Competencies</div>
+    <div class="two-col">
+        <div>
+            <div class="comp-group">
+                <div class="comp-title">Leadership &amp; Management</div>
+                <div class="comp-items">Team Leadership (7-10 engineers) &bull; Agile/Scrum Master &bull; Stakeholder Management &bull; Technical Strategy &bull; Capacity Planning &bull; Performance Management &bull; Hiring &amp; Mentoring</div>
+            </div>
+            <div class="comp-group">
+                <div class="comp-title">Backend Technologies</div>
+                <div class="comp-items">Java &bull; Spring Framework &bull; Ruby on Rails &bull; Node.js &bull; Python &bull; C# &bull; .NET &bull; REST/GraphQL APIs &bull; Microservices Architecture</div>
+            </div>
+            <div class="comp-group">
+                <div class="comp-title">Database &amp; Data</div>
+                <div class="comp-items">PostgreSQL &bull; MySQL &bull; MongoDB &bull; Redis &bull; Apache Kafka &bull; SQL Server &bull; Data Modeling &bull; Performance Optimization</div>
+            </div>
+        </div>
+        <div>
+            <div class="comp-group">
+                <div class="comp-title">Cloud &amp; DevOps</div>
+                <div class="comp-items">AWS (EC2, S3, RDS) &bull; Google Cloud Platform &bull; Docker &bull; Kubernetes &bull; CI/CD Pipelines &bull; Infrastructure as Code &bull; Monitoring</div>
+            </div>
+            <div class="comp-group">
+                <div class="comp-title">Frontend Technologies</div>
+                <div class="comp-items">React.js &bull; Vue.js &bull; AngularJS &bull; JavaScript/ES6+ &bull; HTML5/CSS3 &bull; Responsive Design &bull; Material UI &bull; Backbone.js</div>
+            </div>
+            <div class="comp-group">
+                <div class="comp-title">Tools &amp; Methodologies</div>
+                <div class="comp-items">Git/GitHub &bull; JIRA &bull; New Relic &bull; Raygun &bull; TDD/BDD &bull; Code Reviews &bull; Agile/Scrum &bull; Technical Documentation</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section-title">Professional Experience</div>
+
+    <div class="job">
+        <div class="job-head">
+            <span class="job-title">Engineering Manager</span>
+            <span class="job-date">Feb 2026 - Present</span>
+        </div>
+        <div class="job-company">Ratehub</div>
+        <ul class="bullets">
+            <li>Leading a cross-functional squad of <span class="metric">6 engineers (3 FE, 2 BE, 1 QA)</span> in a Product-Design-Engineering triad, shipping core platform infrastructure and the flagship <span class="tech">Memberships</span> suite</li>
+            <li>Owning quarterly and annual capacity planning with a lightweight estimation model that keeps delivery predictable across squads</li>
+            <li>Driving an engineering-first review culture with architecture and code reviews, plus <span class="tech">rapid PoCs</span> that de-risk direction before Product commits</li>
+            <li>Introducing an engineering <span class="tech">onboarding playbook</span> that ramps new hires quickly and consistently</li>
+            <li>Coaching peer engineering leads new to management and steering org-wide structure in a <span class="metric">Director-adjacent</span> capacity</li>
+            <li>Partnering with Marketing on <span class="tech">Generative Engine Optimization (GEO)</span>, setting front-end readability standards for LLM discoverability, a first-mover play in Canadian fintech</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <span class="job-title">Software Development Manager</span>
+            <span class="job-date">Aug 2023 - Jan 2026</span>
+        </div>
+        <div class="job-company">Allocadia (Uptempo)</div>
+        <ul class="bullets">
+            <li>Led cross-functional team of <span class="metric">7 engineers, 1 PM, and 1 UX designer</span> delivering an enterprise marketing operations platform serving <span class="metric">500+ enterprise customers</span></li>
+            <li>Architected and delivered scalable microservices using <span class="tech">Java, Spring Boot, Apache Kafka, React, GraphQL, MySQL</span> achieving <span class="metric">99.9% uptime</span></li>
+            <li>Optimized Agile processes and sprint planning, achieving <span class="metric">95% on-time delivery</span> and <span class="metric">20% improvement in sprint velocity</span></li>
+            <li>Implemented comprehensive monitoring with <span class="tech">AWS CloudWatch, Raygun, New Relic</span> reducing mean time to resolution by <span class="metric">30%</span></li>
+            <li>Established 1:1 coaching and career development programs resulting in <span class="metric">zero voluntary turnover</span> and <span class="metric">3 internal promotions</span></li>
+            <li>Collaborated with C-level executives and product stakeholders to define technical roadmap and prioritize high-impact features</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <span class="job-title">Development Team Lead / Senior Full Stack Engineer</span>
+            <span class="job-date">Jul 2022 - Aug 2023</span>
+        </div>
+        <div class="job-company">Telus International</div>
+        <ul class="bullets">
+            <li>Led engineering team of <span class="metric">6 developers</span> building customer-facing telecommunications applications serving <span class="metric">1M+ active users</span></li>
+            <li>Designed and implemented containerized microservices architecture using <span class="tech">Docker, Kubernetes on Google Cloud Platform</span> improving deployment efficiency by <span class="metric">40%</span></li>
+            <li>Developed high-performance web applications using <span class="tech">Ruby on Rails, Vue.js, React, Backbone.js, Node.js</span> with comprehensive test coverage</li>
+            <li>Established code review standards, mentoring protocols, and best practices increasing team code quality metrics by <span class="metric">25%</span></li>
+            <li>Collaborated with cross-functional product, design, and QA teams to deliver <span class="metric">20+ major features</span> aligned with business objectives</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <span class="job-title">Senior Full Stack Engineer / Team Lead</span>
+            <span class="job-date">Mar 2020 - Sep 2021</span>
+        </div>
+        <div class="job-company">Guardian Capital (Modern Advisor)</div>
+        <ul class="bullets">
+            <li>Led team of <span class="metric">5 Full Stack Engineers</span> modernizing legacy financial management systems to an automated portfolio management platform</li>
+            <li>Architected and developed fintech applications using <span class="tech">Ruby on Rails, AngularJS, React, Node.js, Material UI</span> handling <span class="metric">$50M+ in assets</span></li>
+            <li>Implemented comprehensive TDD practices using <span class="tech">RSpec</span>, achieving <span class="metric">85% test coverage</span> and reducing production incidents by <span class="metric">35%</span></li>
+            <li>Collaborated with financial advisors and compliance teams to ensure regulatory adherence and a seamless user experience</li>
+            <li>Optimized database performance and implemented caching strategies improving application response times by <span class="metric">30%</span></li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <span class="job-title">Full Stack Web Developer</span>
+            <span class="job-date">Jun 2019 - Mar 2020</span>
+        </div>
+        <div class="job-company">National Judicial Institute</div>
+        <ul class="bullets">
+            <li>Developed judicial education web applications and automation tools using <span class="tech">ColdFusion, Mura CMS, Hibernate ORM</span></li>
+            <li>Built advanced ColdFusion Components (CFCs) with complex business logic for legal case management systems</li>
+            <li>Designed responsive interfaces using <span class="tech">HTML5, CSS3, JavaScript</span> improving user engagement by <span class="metric">20%</span></li>
+            <li>Implemented automated testing frameworks ensuring <span class="metric">98% application uptime</span> for critical judicial systems</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <span class="job-title">Software Developer</span>
+            <span class="job-date">Jan 2018 - Jun 2019</span>
+        </div>
+        <div class="job-company">Department of National Defence</div>
+        <ul class="bullets">
+            <li>Designed and developed secure web-based defense applications using <span class="tech">.NET Framework, C#, ASP.NET</span> for military operations</li>
+            <li>Architected efficient <span class="tech">SQL Server</span> databases and stored procedures optimizing data retrieval by <span class="metric">25%</span></li>
+            <li>Facilitated cross-departmental communication gathering requirements for mission-critical government systems</li>
+            <li>Ensured compliance with government security standards and implemented robust authentication mechanisms</li>
+        </ul>
+    </div>
+
+    <!-- Additional Professional Experience -->
+    <div class="section-title">Additional Professional Experience</div>
+    <div class="two-col">
+        <div>
+            <div class="block">
+                <div class="job-head">
+                    <span class="job-title">Web Developer (Freelance)</span>
+                    <span class="job-date">Jan 2016 - Aug 2017</span>
+                </div>
+                <div class="job-company">AQI Blockchain Intelligence</div>
+                <ul class="bullets">
+                    <li>Built custom e-commerce sites with <span class="tech">WordPress, PHP</span></li>
+                    <li>Developed blockchain analytics dashboards with real-time data visualization</li>
+                    <li>Integrated secure payment gateways and cryptocurrency support</li>
+                </ul>
+            </div>
+            <div class="block">
+                <div class="job-head">
+                    <span class="job-title">Design Engineer</span>
+                    <span class="job-date">2013 - 2016</span>
+                </div>
+                <div class="job-company">MDS Aero Support</div>
+                <ul class="bullets">
+                    <li>Administered engineering design and approval workflows for aerospace components</li>
+                    <li>Developed CAD automation tools improving design efficiency by <span class="metric">25%</span></li>
+                    <li>Collaborated on aircraft maintenance solutions across teams</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="block">
+                <div class="job-head">
+                    <span class="job-title">Computer Science Professor (Part-time)</span>
+                    <span class="job-date">Aug 2019 - Present</span>
+                </div>
+                <div class="job-company">Algonquin College</div>
+                <ul class="bullets">
+                    <li>Deliver lectures and labs in Web Development, OOP Java, Mobile Development, and Computer Architecture</li>
+                    <li>Mentor <span class="metric">100+ students</span> annually in software development and career guidance</li>
+                    <li>Developed curriculum for modern web technologies and industry best practices</li>
+                </ul>
+            </div>
+            <div class="block">
+                <div class="job-head">
+                    <span class="job-title">Full Stack Bootcamp Instructor</span>
+                    <span class="job-date">Sep 2022 - Mar 2023</span>
+                </div>
+                <div class="job-company">University of Toronto</div>
+                <ul class="bullets">
+                    <li>Designed a comprehensive <span class="tech">MERN</span> stack curriculum (MongoDB, Express, React, Node.js)</li>
+                    <li>Trained <span class="metric">50+ students</span> in full-stack development and GraphQL</li>
+                    <li>Achieved <span class="metric">95% completion</span> and <span class="metric">85% job placement</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education & Certifications -->
+    <div class="section-title">Education &amp; Certifications</div>
+    <div class="two-col">
+        <div class="edu">
+            <div class="edu-title">Bachelor of Applied Engineering, Computer Science</div>
+            <div class="edu-school">University of Ottawa</div>
+            <div class="edu-detail">Honors, Management &amp; Entrepreneurship &bull; GPA 3.8/4.0 &bull; 2015-2018</div>
+        </div>
+        <div class="edu">
+            <div class="edu-title">Diploma in Robotics Engineering</div>
+            <div class="edu-school">Algonquin College</div>
+            <div class="edu-detail">Dean's Honor List 2010-11, 2011-12 &bull; 2010-2012</div>
+        </div>
+    </div>
+
+    <!-- Leadership & Teaching Impact -->
+    <div class="section-title">Leadership &amp; Teaching Impact</div>
+    <div class="two-col">
+        <div class="block">
+            <div class="job-head">
+                <span class="job-title">Lead Instructor, Web Development</span>
+                <span class="job-date">May 2023 - Dec 2023</span>
+            </div>
+            <div class="job-company">W3Schools.com</div>
+            <ul class="bullets">
+                <li>Led instruction across front-end and back-end development technologies</li>
+                <li>Mentored teaching assistants and shaped cohesive learning experiences</li>
+                <li>Specialized in HTML, CSS, JavaScript, Git, React, Node.js, and SQL</li>
+            </ul>
+        </div>
+        <div class="block">
+            <div class="job-head">
+                <span class="job-title">Key Achievements</span>
+                <span class="job-date">2015 - Present</span>
+            </div>
+            <div class="job-company">Career Highlights</div>
+            <ul class="bullets">
+                <li>Mentored <span class="metric">20+ junior developers</span> into senior roles and promotions</li>
+                <li>Sustained <span class="metric">99.9% uptime</span> and <span class="metric">95% on-time delivery</span> on enterprise platforms</li>
+                <li>Built teams with <span class="metric">zero voluntary turnover</span></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         locale: "en_US",
         url: "https://abulqasim.net",
         title: "Abul Qasim | Engineering Leader & CTO",
-        description: "Building high-performing teams and scalable software systems. 9+ years of experience in leadership and full-stack development.",
+        description: "Building high-performing teams and scalable software systems. 10+ years of experience in leadership and full-stack development.",
         siteName: "Abul Qasim Portfolio",
         images: [
             {

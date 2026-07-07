@@ -14,7 +14,7 @@ export const profileData = {
 
     // Career stats
     stats: {
-        yearsOfExperience: 9,
+        yearsOfExperience: 10,
         teamSize: 15, // Updated to reflect broader influence
         studentsmentored: 100,
         projectsCompleted: 50,
@@ -22,7 +22,7 @@ export const profileData = {
     },
 
     // Summary
-    summary: 'Software Engineering Leader with 9+ years of experience. I specialize in turning chaotic requirements into scalable architecture, building high-performing engineering cultures, and delivering enterprise-grade software. Whether as a Hands-on Manager, Director, or Head of Engineering, I bridge the gap between business goals and technical execution.',
+    summary: 'Software Engineering Leader with 10+ years of experience. I specialize in turning chaotic requirements into scalable architecture, building high-performing engineering cultures, and delivering enterprise-grade software. Whether as a Hands-on Manager, Director, or Head of Engineering, I bridge the gap between business goals and technical execution.',
 
     // Core competencies
     competencies: {
