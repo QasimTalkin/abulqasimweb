@@ -74,14 +74,15 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <head>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPYLK2PRJ5"></script>
+                {/* Google tag (gtag.js) - Abul Qasim Portfolio */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3X0V8Q9TS"></script>
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
-                            gtag('config', 'G-QPYLK2PRJ5');
+                            gtag('config', 'G-E3X0V8Q9TS');
                         `,
                     }}
                 />
